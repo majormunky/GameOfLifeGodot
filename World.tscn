@@ -101,7 +101,37 @@ margin_top = 56.0
 margin_right = 296.0
 margin_bottom = 70.0
 text = "0.1 seconds"
+
+[node name="ItemList" type="ItemList" parent="Control/ColorRect"]
+margin_left = 360.0
+margin_top = 8.0
+margin_right = 520.0
+margin_bottom = 80.0
+
+[node name="AddShapeButton" type="Button" parent="Control/ColorRect"]
+margin_left = 528.0
+margin_top = 56.0
+margin_right = 607.0
+margin_bottom = 76.0
+text = "Add Shape"
+
+[node name="RandomButton" type="Button" parent="Control/ColorRect"]
+margin_left = 128.0
+margin_top = 16.0
+margin_right = 211.0
+margin_bottom = 36.0
+text = "Randomize"
+
+[node name="ClearButton" type="Button" parent="Control/ColorRect"]
+margin_left = 224.0
+margin_top = 16.0
+margin_right = 236.0
+margin_bottom = 36.0
+text = "Clear"
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="button_up" from="Control/ColorRect/StartButton" to="." method="_on_StartButton_button_up"]
 [connection signal="button_up" from="Control/ColorRect/TickButton" to="." method="_on_TickButton_button_up"]
 [connection signal="value_changed" from="Control/ColorRect/SpeedSlider" to="." method="_on_SpeedSlider_value_changed"]
+[connection signal="button_up" from="Control/ColorRect/AddShapeButton" to="." method="_on_AddShapeButton_button_up"]
+[connection signal="button_up" from="Control/ColorRect/RandomButton" to="." method="_on_RandomButton_button_up"]
+[connection signal="button_up" from="Control/ColorRect/ClearButton" to="." method="_on_ClearButton_button_up"]
