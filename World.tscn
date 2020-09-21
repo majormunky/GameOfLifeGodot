@@ -105,17 +105,17 @@ margin_bottom = 70.0
 text = "0.1 seconds"
 
 [node name="ItemList" type="ItemList" parent="Control/ColorRect"]
-margin_left = 360.0
+margin_left = 856.0
 margin_top = 8.0
-margin_right = 520.0
+margin_right = 1016.0
 margin_bottom = 80.0
 
 [node name="AddShapeButton" type="Button" parent="Control/ColorRect"]
-margin_left = 528.0
+margin_left = 768.0
 margin_top = 56.0
-margin_right = 607.0
+margin_right = 847.0
 margin_bottom = 76.0
-text = "Add Shape"
+text = "Load Shape"
 
 [node name="RandomButton" type="Button" parent="Control/ColorRect"]
 margin_left = 128.0

@@ -17,6 +17,7 @@ var shapes = [
 	"Small Exploder",
 	"Exploder",
 	"10 Cell Row",
+	"XKCD John Conway RIP"
 ]
 
 func _ready() -> void:
@@ -31,6 +32,7 @@ func tick() -> void:
 	tilemap.tick()
 
 func add_shape(name: String) -> void:
+	tilemap.setup_blank_grid()
 	match name:
 		"Slider":
 			tilemap.add_slider()
@@ -40,6 +42,8 @@ func add_shape(name: String) -> void:
 			tilemap.add_exploder()
 		"10 Cell Row":
 			tilemap.add_10_cell_row()
+		"XKCD John Conway RIP":
+			tilemap.add_xkcd()
 	tilemap.update_tilemap()
 
 func _on_Timer_timeout() -> void:

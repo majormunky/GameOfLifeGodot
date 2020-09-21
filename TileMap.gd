@@ -129,6 +129,32 @@ func add_exploder() -> void:
 	grid[y][x+2] = 1
 	grid[y+4][x+2] = 1
 
+func add_xkcd() -> void:
+	var x = int(WIDTH / 2)
+	var y = int(HEIGHT / 2)
+	grid[y][x] = 1
+	grid[y][x+1] = 1
+	grid[y][x+2] = 1
+	grid[y+1][x] = 1
+	grid[y+2][x] = 1
+	grid[y+1][x+2] = 1
+	grid[y+2][x+2] = 1
+	grid[y+3][x+1] = 1
+	grid[y+4][x+1] = 1
+	grid[y+5][x+1] = 1
+	grid[y+6][x+1] = 1
+	grid[y+4][x] = 1
+	grid[y+4][x+2] = 1
+	grid[y+5][x+3] = 1
+	grid[y+6][x+4] = 1
+	grid[y+5][x-1] = 1
+	grid[y+4][x-2] = 1
+	grid[y+7][x] = 1
+	grid[y+8][x] = 1
+	grid[y+7][x+2] = 1
+	grid[y+8][x+2] = 1
+	
+
 func _ready() -> void:
 	grid = generate_grid()
 	update_tilemap()
